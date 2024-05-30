@@ -1,16 +1,13 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: SS
-  Date: 27.05.2024
-  Time: 22:47
-  To change this template use File | Settings | File Templates.
---%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
 <html>
-  <head>
-    <title>$Title$</title>
-  </head>
-  <body>
-  $END$
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <title>Order Confirmation</title>
+</head>
+<body>
+<h1>Order Confirmation</h1>
+<p>Your order has been placed successfully.</p>
+<a href="index.jsp">Home</a>
+</body>
 </html>

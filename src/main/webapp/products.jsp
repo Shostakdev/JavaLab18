@@ -1,16 +1,31 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: SS
-  Date: 27.05.2024
-  Time: 22:47
-  To change this template use File | Settings | File Templates.
---%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page import="inventorymanager.models.Product" %>
+<%@ page import="java.util.List" %>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
 <html>
-  <head>
-    <title>$Title$</title>
-  </head>
-  <body>
-  $END$
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <title>Products</title>
+</head>
+<body>
+<h1>Products</h1>
+<table border="1">
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Price</th>
+        <th>Quantity</th>
+    </tr>
+    <% for (Product product : (List<Product>) request.getAttribute("products")) { %>
+        <tr>
+            <td><%= product.getId() %></td>
+            <td><%= product.getName() %></td>
+            <td><%= product.getPrice() %></td>
+            <td><%= product.getQuantity() %></td>
+        </tr>
+    <% } %>
+
+</table>
+<a href="index.jsp">Home</a>
+</body>
 </html>
